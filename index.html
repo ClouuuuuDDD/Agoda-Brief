@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agoda Strategic Outreach Deck</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
+    
+    :root {
+      --pixel-black: #585856;
+      --pixel-white: #FFFFFF;
+      --pixel-bg: #F8F8F8;
+      --pixel-grid: #E5E5E5;
+      --pixel-pink: #FF2938;
+      --pixel-green: #0DB14B;
+      --pixel-yellow: #FDB812;
+      --pixel-blue: #00A9DC;
+      --pixel-violet: #B01E8D;
+      
+      --font-pixel: 'Press Start 2P', monospace;
+      --font-body: 'Space Mono', monospace;
+      --font-data: 'VT323', monospace;
+    }
+
+    body {
+      background-color: var(--pixel-bg);
+      color: #0F172A;
+      font-family: var(--font-body);
+      overflow-x: hidden;
+    }
+
+    .bg-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, var(--pixel-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--pixel-grid) 1px, transparent 1px);
+    }
+
+    .font-pixel { font-family: var(--font-pixel); }
+    .font-body { font-family: var(--font-body); }
+    .font-data { font-family: var(--font-data); }
+
+    .pixel-border { border: 4px solid var(--pixel-black); }
+    .pixel-shadow { box-shadow: 6px 6px 0px var(--pixel-black); }
+    
+    .pixel-border-pink { border: 4px solid var(--pixel-pink); }
+    .pixel-border-green { border: 4px solid var(--pixel-green); }
+
+    .pixel-box {
+      background: var(--pixel-white);
+      border: 4px solid var(--pixel-black);
+      box-shadow: 6px 6px 0px var(--pixel-black);
+    }
+
+    .pixel-button {
+      border: 4px solid var(--pixel-black);
+      box-shadow: 6px 6px 0px var(--pixel-black);
+      text-transform: uppercase;
+      font-family: var(--font-pixel);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .pixel-button:active {
+      transform: translate(4px, 4px);
+      box-shadow: 2px 2px 0px var(--pixel-black);
+    }
+
+    .zigzag-divider {
+      height: 16px;
+      width: 100%;
+      background: 
+        linear-gradient(135deg, var(--pixel-black) 25%, transparent 25%) -8px 0,
+        linear-gradient(225deg, var(--pixel-black) 25%, transparent 25%) -8px 0,
+        linear-gradient(315deg, var(--pixel-black) 25%, transparent 25%),
+        linear-gradient(45deg, var(--pixel-black) 25%, transparent 25%);
+      background-size: 16px 16px;
+    }
+
+    .pixel-marquee {
+      background: var(--pixel-black);
+      color: var(--pixel-white);
+      font-family: var(--font-pixel);
+      padding: 12px 0;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .pixel-marquee-content {
+      display: inline-block;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100vw); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .animate-100-linear {
+      transition: all 100ms linear;
+    }
+    
+    ::-webkit-scrollbar { width: 12px; }
+    ::-webkit-scrollbar-track { background: var(--pixel-bg); border-left: 4px solid var(--pixel-black); }
+    ::-webkit-scrollbar-thumb { background: var(--pixel-pink); border: 4px solid var(--pixel-black); }
+  </style>
+</head>
+<body class="w-full bg-[var(--pixel-bg)]">
+
+  <!-- SLIDE 1 -->
+  <section class="min-h-screen w-full relative flex items-center py-20 px-6 md:px-16 border-b-8 border-[var(--pixel-black)] bg-grid">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="flex flex-col lg:flex-row gap-16 items-center">
+        <!-- Left: Narrative -->
+        <div class="lg:w-1/2 pixel-box p-8 bg-[var(--pixel-white)] relative">
+          <div class="absolute -top-6 -left-6 border-4 border-[var(--pixel-black)] shadow-[6px_6px_0px_var(--pixel-black)] bg-[var(--pixel-pink)] text-white p-3 font-pixel text-xs transform -rotate-6">
+            AGODA.EXE
+          </div>
+          <h1 class="font-pixel text-2xl md:text-3xl lg:text-4xl leading-tight mb-6 mt-4">
+            INDIA'S SMART TRAVEL OS
+          </h1>
+          <p class="font-body text-base md:text-lg mb-6 leading-relaxed">
+            Hi, I'm Kunj — and here's what stands out about Agoda in India:
+          </p>
+          <p class="font-body text-base md:text-lg mb-6 leading-relaxed">
+            You've built India's leading outbound platform with <strong>50M+ app downloads</strong>, <strong>30%+ YoY outbound GMV growth</strong>, and <strong>unmatched APAC inventory</strong>. 
+          </p>
+          <p class="font-body text-base md:text-lg leading-relaxed">
+            With <strong>GST invoice automation</strong>, <strong>UPI integration</strong>, and <strong>AI price freeze</strong>, you're moving from discount app to smart travel OS. The next unlock: solving GST friction for SMEs, localizing for Tier 2, and expanding Agoda Cash.
+          </p>
+        </div>
+
+        <!-- Right: Pixel Bar Chart -->
+        <div class="lg:w-1/2 w-full flex flex-col gap-6 relative">
+          <div class="absolute -top-8 -right-8 border-4 border-[var(--pixel-black)] shadow-[6px_6px_0px_var(--pixel-black)] bg-[var(--pixel-pink)] text-white p-4 font-pixel text-xs transform rotate-12 z-10 text-center">
+            OUTBOUND<br>LEADER
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <div class="w-full pixel-border bg-[var(--pixel-pink)] h-16 relative flex items-center px-4 pixel-shadow">
+              <span class="font-data text-white text-2xl tracking-wider relative z-10 shadow-black drop-shadow-md">50M+ App Downloads</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <div class="w-[70%] pixel-border bg-[var(--pixel-green)] h-16 relative flex items-center px-4 pixel-shadow">
+              <span class="font-data text-white text-2xl tracking-wider shadow-black drop-shadow-md">30%+ Outbound Growth</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <div class="w-[50%] pixel-border bg-[var(--pixel-pink)] h-16 relative flex items-center px-4 pixel-shadow">
+              <span class="font-data text-white text-2xl tracking-wider shadow-black drop-shadow-md">4M+ Global Properties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 left-0 w-full pixel-marquee pixel-border border-l-0 border-r-0 border-b-0">
+        <div class="pixel-marquee-content uppercase text-sm md:text-base tracking-widest">
+          GST Invoice Automation Q4 2024 • UPI Integration Q1 2025 • AI Price Freeze Q2 2025 • 50M+ Downloads • 30%+ Growth • 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zigzag-divider"></div>
+
+  <!-- SLIDE 2 -->
+  <section class="min-h-screen w-full relative flex items-center py-20 px-6 md:px-16 border-b-8 border-[var(--pixel-black)] bg-[var(--pixel-bg)]">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="mb-12">
+        <h2 class="font-pixel text-2xl md:text-3xl mb-4">USER ANALYSIS: INDIA SEGMENTS</h2>
+        <p class="font-body text-lg max-w-4xl">
+          Agoda's base is outbound-focused and Tier 2 scaling. GST compliance is the #1 barrier for 70% of business users. Unlock growth by tailoring flows per segment.
+        </p>
+      </div>
+
+      <div id="slide-2-charts" class="grid grid-cols-1 lg:grid-cols-2 gap-8 relative p-8 pixel-box bg-[var(--pixel-white)]">
+        
+        <!-- Chart 1: Trip Type Pie -->
+        <div class="flex flex-col items-center justify-center p-6 pixel-border relative">
+          <h3 class="font-pixel text-sm mb-8 absolute top-4">TRIP MIX</h3>
+          <div class="relative w-48 h-48 mt-8">
+            <div class="absolute inset-0 pixel-border bg-[var(--pixel-white)]"></div>
+            <!-- Outbound 55% -->
+            <div class="pie-slice absolute inset-0 bg-[var(--pixel-pink)] origin-bottom-right animate-100-linear scale-0" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); width: 74%; height: 74%;"></div>
+            <!-- Inbound 20% -->
+            <div class="pie-slice absolute bottom-0 right-0 bg-[var(--pixel-green)] origin-top-left animate-100-linear delay-[100ms] scale-0" style="width: 45%; height: 45%;"></div>
+            <!-- Business 15% -->
+            <div class="pie-slice absolute top-0 right-0 bg-[var(--pixel-black)] origin-bottom-left animate-100-linear delay-[200ms] scale-0" style="width: 26%; height: 100%;"></div>
+            <!-- Domestic 10% -->
+            <div class="pie-slice absolute bottom-0 left-0 bg-[var(--pixel-bg)] pixel-border border-l-0 border-b-0 origin-top-right animate-100-linear delay-[300ms] scale-0" style="width: 74%; height: 26%;"></div>
+          </div>
+          <div class="mt-6 flex flex-wrap justify-center gap-4 font-data text-lg">
+            <div class="flex items-center gap-2"><div class="w-4 h-4 bg-[var(--pixel-pink)] pixel-border"></div>Outbound: 55%</div>
+            <div class="flex items-center gap-2"><div class="w-4 h-4 bg-[var(--pixel-green)] pixel-border"></div>Inbound: 20%</div>
+            <div class="flex items-center gap-2"><div class="w-4 h-4 bg-[var(--pixel-black)] pixel-border"></div>Business: 15%</div>
+            <div class="flex items-center gap-2"><div class="w-4 h-4 bg-[var(--pixel-bg)] pixel-border"></div>Domestic: 10%</div>
+          </div>
+        </div>
+
+        <!-- Chart 2: Geography Bars -->
+        <div class="flex flex-col justify-end p-6 pixel-border h-80 relative mt-8 lg:mt-0">
+          <h3 class="font-pixel text-sm mb-4 absolute top-4 w-full text-center left-0">GEOGRAPHY</h3>
+          <div class="flex justify-around items-end h-48 w-full gap-4 relative z-10 pt-8">
+            <div class="flex flex-col items-center w-1/3 h-full justify-end">
+              <span class="font-data text-lg md:text-xl mb-2 text-center whitespace-nowrap">Metros: 60%</span>
+              <div class="animate-height w-full bg-[var(--pixel-pink)] pixel-border transition-all duration-500" data-height="100%" style="height: 0px;"></div>
+            </div>
+            <div class="flex flex-col items-center w-1/3 h-full justify-end">
+              <span class="font-data text-lg md:text-xl mb-2 text-center whitespace-nowrap">Tier 2: 30%</span>
+              <div class="animate-height w-full bg-[var(--pixel-green)] pixel-border transition-all duration-500 delay-100" data-height="60%" style="height: 0px;"></div>
+            </div>
+            <div class="flex flex-col items-center w-1/3 h-full justify-end">
+              <span class="font-data text-lg md:text-xl mb-2 text-center whitespace-nowrap">Tier 3+: 10%</span>
+              <div class="animate-height w-full bg-[var(--pixel-bg)] pixel-border transition-all duration-500 delay-200" data-height="20%" style="height: 0px;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart 3: Histogram -->
+        <div class="flex flex-col justify-center p-6 pixel-border gap-4 h-80 relative">
+          <h3 class="font-pixel text-sm mb-2 absolute top-4">PAIN PRIORITY</h3>
+          <div class="mt-8 w-full">
+            <div class="flex items-center mb-4 gap-2">
+              <span class="font-data text-lg w-1/3 text-right">GST Compliance</span>
+              <div class="w-2/3 h-8 relative">
+                <div class="histogram-bar h-full bg-[var(--pixel-pink)] pixel-border absolute top-0 left-0 transition-all duration-300 ease-linear" data-width="70%" style="width: 0;"></div>
+                <span class="absolute right-0 top-1 font-data text-xl">70%</span>
+              </div>
+            </div>
+            <div class="flex items-center mb-4 gap-2">
+              <span class="font-data text-lg w-1/3 text-right">Price Clarity</span>
+              <div class="w-2/3 h-8 relative">
+                <div class="histogram-bar h-full bg-[var(--pixel-green)] pixel-border absolute top-0 left-0 transition-all duration-300 ease-linear delay-[100ms]" data-width="65%" style="width: 0;"></div>
+                <span class="absolute right-0 top-1 font-data text-xl">65%</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="font-data text-lg w-1/3 text-right">Local Support</span>
+              <div class="w-2/3 h-8 relative">
+                <div class="histogram-bar h-full bg-[var(--pixel-bg)] pixel-border absolute top-0 left-0 transition-all duration-300 ease-linear delay-[200ms]" data-width="50%" style="width: 0;"></div>
+                <span class="absolute right-0 top-1 font-data text-xl">50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart 4: Matrix -->
+        <div class="flex flex-col p-6 pixel-border h-80 relative bg-grid">
+          <h3 class="font-pixel text-sm absolute top-4 left-4 bg-[var(--pixel-white)] px-2 z-20">USER MATRIX</h3>
+          <span class="font-data absolute bottom-2 w-full text-center left-0 z-20 bg-white/80">Price Sensitivity &rarr;</span>
+          <span class="font-data absolute left-0 top-1/2 -rotate-90 origin-left -translate-y-1/2 z-20 bg-white/80 whitespace-nowrap">&uarr; Compliance Need</span>
+          
+          <div class="absolute inset-8 border-l-4 border-b-4 border-[var(--pixel-black)]">
+            <!-- Outbound Value Seekers -->
+            <div class="matrix-marker absolute w-4 h-4 bg-[var(--pixel-pink)] pixel-border transform -translate-x-1/2 translate-y-1/2 transition-opacity duration-300 opacity-0" style="left: 30%; bottom: 30%;">
+              <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[var(--pixel-white)] border-2 border-[var(--pixel-black)] font-data text-sm p-1 whitespace-nowrap text-center max-w-[120px] shadow-sm">Outbound Value</div>
+            </div>
+            <!-- Tier 2 Aspirants -->
+            <div class="matrix-marker absolute w-4 h-4 bg-[var(--pixel-green)] pixel-border transform -translate-x-1/2 translate-y-1/2 transition-opacity duration-300 delay-[100ms] opacity-0" style="left: 40%; bottom: 50%;">
+              <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[var(--pixel-white)] border-2 border-[var(--pixel-black)] font-data text-sm p-1 whitespace-nowrap text-center max-w-[120px] shadow-sm">Tier 2 Aspirants</div>
+            </div>
+            <!-- SME -->
+            <div class="matrix-marker absolute w-4 h-4 bg-[var(--pixel-bg)] pixel-border transform -translate-x-1/2 translate-y-1/2 transition-opacity duration-300 delay-[200ms] opacity-0" style="left: 70%; bottom: 70%;">
+              <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[var(--pixel-white)] border-2 border-[var(--pixel-black)] font-data text-sm p-1 whitespace-nowrap text-center max-w-[120px] shadow-sm">SME Business</div>
+            </div>
+            <!-- Inbound APAC -->
+            <div class="matrix-marker absolute w-4 h-4 bg-[var(--pixel-white)] pixel-border transform -translate-x-1/2 translate-y-1/2 transition-opacity duration-300 delay-[300ms] opacity-0" style="left: 60%; bottom: 40%;">
+              <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[var(--pixel-white)] border-2 border-[var(--pixel-black)] font-data text-sm p-1 whitespace-nowrap text-center max-w-[120px] shadow-sm">Inbound APAC</div>
+            </div>
+            
+            <!-- Growth Path Arrow -->
+            <svg class="matrix-svg absolute inset-0 w-full h-full pointer-events-none transition-opacity duration-500 delay-[500ms] opacity-0">
+              <path d="M 40% 50% L 32% 34%" stroke="var(--pixel-black)" stroke-width="4" stroke-dasharray="8,8" fill="none" />
+              <text x="25%" y="45%" class="font-data text-sm" fill="var(--pixel-black)" transform="rotate(50 35% 40%)">GROWTH PATH</text>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="zigzag-divider"></div>
+
+  <!-- SLIDE 3 -->
+  <section class="min-h-screen w-full relative flex items-center py-20 px-6 md:px-16 border-b-8 border-[var(--pixel-black)] bg-grid">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="mb-12">
+        <h2 class="font-pixel text-2xl md:text-3xl mb-4">COMPETITIVE LANDSCAPE</h2>
+        <p class="font-body text-lg max-w-4xl">
+          Agoda leads on Outbound Pricing and APAC Inventory. The edge is pricing algorithms + Booking Holdings backing vs domestic incumbents.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        
+        <!-- 2x2 Matrix -->
+        <div class="w-full lg:w-2/3 h-[500px] relative mt-10 ml-8">
+          <!-- Axis Labels outside boundary -->
+          <span class="absolute -left-12 top-1/2 -translate-y-1/2 -rotate-90 origin-center font-data text-xl whitespace-nowrap">Standard &larr; Pricing &rarr; Discount</span>
+          <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 font-data text-xl whitespace-nowrap">Domestic &larr; Market Focus &rarr; Global</span>
+          
+          <div class="absolute inset-0 pixel-border bg-[var(--pixel-white)]">
+            <!-- Quadrants -->
+            <div class="absolute inset-0 grid grid-cols-2 grid-rows-2">
+              <div class="border-r-4 border-b-4 border-dashed border-[var(--pixel-grid)] flex items-start justify-start p-4"><span class="font-pixel text-xs text-gray-400">Standard / Domestic</span></div>
+              <div class="border-b-4 border-dashed border-[var(--pixel-grid)] flex items-start justify-end p-4"><span class="font-pixel text-xs text-gray-400">Standard / Global</span></div>
+              <div class="border-r-4 border-dashed border-[var(--pixel-grid)] flex items-end justify-start p-4"><span class="font-pixel text-xs text-gray-400">Discount / Domestic</span></div>
+              <div class="flex items-end justify-end p-4"><span class="font-pixel text-xs text-gray-400">Discount / Global</span></div>
+            </div>
+
+            <!-- Markers -->
+            <div class="absolute w-6 h-6 bg-[var(--pixel-pink)] pixel-border transform -translate-x-1/2 translate-y-1/2 z-10 pixel-shadow" style="right: 10%; top: 15%;">
+              <span class="absolute top-8 left-1/2 -translate-x-1/2 font-pixel text-sm bg-[var(--pixel-white)] px-2 py-1 pixel-border whitespace-nowrap">Agoda</span>
+            </div>
+            
+            <div class="absolute w-5 h-5 bg-[var(--pixel-black)] pixel-border transform -translate-x-1/2 translate-y-1/2 z-10" style="left: 20%; bottom: 40%;">
+              <span class="absolute top-8 left-1/2 -translate-x-1/2 font-data text-lg whitespace-nowrap">MakeMyTrip</span>
+            </div>
+
+            <div class="absolute w-5 h-5 bg-[var(--pixel-bg)] pixel-border transform -translate-x-1/2 translate-y-1/2 z-10" style="left: 60%; bottom: 50%;">
+              <span class="absolute top-8 left-1/2 -translate-x-1/2 font-data text-lg whitespace-nowrap">Booking.com</span>
+            </div>
+
+            <div class="absolute w-5 h-5 bg-[var(--pixel-black)] pixel-border transform -translate-x-1/2 translate-y-1/2 z-10" style="left: 30%; bottom: 60%;">
+              <span class="absolute -top-8 left-1/2 -translate-x-1/2 font-data text-lg whitespace-nowrap">EaseMyTrip</span>
+            </div>
+
+            <div class="absolute w-5 h-5 bg-[var(--pixel-bg)] pixel-border transform -translate-x-1/2 translate-y-1/2 z-10" style="left: 70%; bottom: 30%;">
+              <span class="absolute top-8 left-1/2 -translate-x-1/2 font-data text-lg whitespace-nowrap">Airbnb</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature Snapshot -->
+        <div class="w-full lg:w-1/3 flex flex-col gap-6">
+          <h3 class="font-pixel text-lg mb-2">FEATURE SNAPSHOT</h3>
+          
+          <div class="pixel-box p-4 bg-[var(--pixel-bg)] flex justify-between items-center">
+            <span class="font-body font-bold">Outbound Pricing</span>
+            <div class="flex gap-2 text-xl font-pixel">
+              <span class="text-[var(--pixel-pink)]" title="Agoda">✅</span>
+              <span title="Others">⚠️</span>
+            </div>
+          </div>
+
+          <div class="pixel-box p-4 bg-[var(--pixel-bg)] flex justify-between items-center">
+            <span class="font-body font-bold">APAC Inventory</span>
+            <div class="flex gap-2 text-xl font-pixel">
+              <span class="text-[var(--pixel-pink)]" title="Agoda">✅</span>
+              <span title="Others">⚠️</span>
+            </div>
+          </div>
+
+          <div class="pixel-box p-4 bg-[var(--pixel-bg)] flex justify-between items-center">
+            <span class="font-body font-bold">GST Automation</span>
+            <div class="flex gap-2 text-xl font-pixel">
+              <span class="text-[var(--pixel-pink)]" title="Agoda">✅</span>
+              <span title="Others">⚠️</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="zigzag-divider"></div>
+
+  <!-- SLIDE 4 -->
+  <section class="min-h-screen w-full relative flex items-center py-20 px-6 md:px-16 border-b-8 border-[var(--pixel-black)] bg-[var(--pixel-white)]">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="mb-12">
+        <h2 class="font-pixel text-2xl md:text-3xl mb-4">SWOT & ACTIONABLE DRIVERS</h2>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- SWOT Matrix -->
+        <div class="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 pixel-border">
+          <div class="bg-[var(--pixel-pink)] bg-opacity-10 p-6 border-b-4 md:border-r-4 border-[var(--pixel-black)]">
+            <h3 class="font-pixel text-base md:text-lg mb-4" style="color: var(--pixel-black);">STRENGTHS</h3>
+            <ul class="font-body text-sm space-y-2 list-disc pl-4">
+              <li>Pricing algorithms & tech</li>
+              <li>APAC inventory depth</li>
+              <li>Booking Holdings backing</li>
+              <li>Aggressive bank acquisition</li>
+            </ul>
+          </div>
+          <div class="bg-[var(--pixel-green)] bg-opacity-10 p-6 border-b-4 border-[var(--pixel-black)]">
+            <h3 class="font-pixel text-base md:text-lg mb-4" style="color: var(--pixel-black);">WEAKNESSES</h3>
+            <ul class="font-body text-sm space-y-2 list-disc pl-4">
+              <li>Domestic supply gap</li>
+              <li>Historical GST friction</li>
+              <li>Brand trust vs. locals</li>
+              <li>Bank offer dependency</li>
+            </ul>
+          </div>
+          <div class="bg-[var(--pixel-bg)] p-6 border-b-4 md:border-b-0 md:border-r-4 border-[var(--pixel-black)]">
+            <h3 class="font-pixel text-base md:text-lg mb-4" style="color: var(--pixel-black);">OPPORTUNITIES</h3>
+            <ul class="font-body text-sm space-y-2 list-disc pl-4">
+              <li>Tier 2 vernacular localization</li>
+              <li>SME GST automation</li>
+              <li>Agoda Cash loyalty loop</li>
+              <li>Inbound APAC corridor</li>
+            </ul>
+          </div>
+          <div class="bg-white p-6">
+            <h3 class="font-pixel text-base md:text-lg mb-4" style="color: var(--pixel-black);">THREATS</h3>
+            <ul class="font-body text-sm space-y-2 list-disc pl-4">
+              <li>MMT outbound retaliation</li>
+              <li>Regulatory changes</li>
+              <li>Direct booking shift</li>
+              <li>Margin pressure</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Action Drivers -->
+        <div class="w-full lg:w-1/2 flex flex-col gap-6">
+          <div class="pixel-box p-5 pixel-border-pink">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-2xl">🎮</span>
+              <h4 class="font-pixel text-sm leading-relaxed">USER: WANT BEST OUTBOUND + GST + UPI</h4>
+            </div>
+            <p class="font-body text-sm bg-[var(--pixel-pink)] text-white p-2 mt-3 inline-block">
+              So What: Lead with "Best Outbound Price + GST Guarantee" & UPI-first UX.
+            </p>
+          </div>
+
+          <div class="pixel-box p-5 pixel-border-green">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-2xl">🕹️</span>
+              <h4 class="font-pixel text-sm leading-relaxed">PARTNER: NEED CROSS-BORDER + DYNAMIC PRICING</h4>
+            </div>
+            <p class="font-body text-sm bg-[var(--pixel-green)] text-white p-2 mt-3 inline-block">
+              So What: Provide inbound demand insights and pricing intelligence tools.
+            </p>
+          </div>
+
+          <div class="pixel-box p-5 border-4 border-[var(--pixel-bg)]">
+            <div class="flex items-center gap-3 mb-2">
+              <span class="text-2xl">🎯</span>
+              <h4 class="font-pixel text-sm leading-relaxed">MARKET: OUTBOUND BOOM + TIER 2 ASPIRATION</h4>
+              <span class="font-data text-lg ml-auto bg-[var(--pixel-grid)] px-2">25-30% YoY</span>
+            </div>
+            <p class="font-body text-sm bg-[var(--pixel-black)] text-white p-2 mt-3 inline-block">
+              So What: Build Tier 2 outbound and SME GST products as dedicated pillars.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zigzag-divider"></div>
+
+  <!-- SLIDE 5 -->
+  <section class="min-h-screen w-full relative flex items-center py-20 px-6 md:px-16 border-b-8 border-[var(--pixel-black)] bg-grid">
+    <div class="max-w-7xl mx-auto w-full">
+      <div class="flex flex-col items-center max-w-5xl mx-auto relative">
+        
+        <!-- Insight Box -->
+        <div class="w-full pixel-box p-8 md:p-12 mb-16 pixel-border-pink relative bg-[var(--pixel-white)] z-10">
+          <div class="absolute -top-5 -right-5 border-4 border-[var(--pixel-black)] shadow-[6px_6px_0px_var(--pixel-black)] bg-[var(--pixel-black)] text-white p-3 font-pixel text-xs transform rotate-12">
+            KEY INSIGHT
+          </div>
+          <p class="font-body text-lg md:text-xl leading-relaxed text-center">
+            Agoda won "outbound price leader" but faces barriers in B2B (GST) and Tier 2 (localization). The unlock is evolving from "discount app" to <strong class="font-pixel text-[var(--pixel-pink)] text-base md:text-lg block mt-4 mb-4 leading-normal">INDIA'S SMART TRAVEL OS</strong> using AI pricing to defend outbound, solving GST to unlock SME share, and localizing for Tier 2 aspiration.
+          </p>
+        </div>
+
+        <!-- Connectivity lines -->
+        <div class="absolute top-[200px] md:top-[180px] w-2 h-16 bg-[var(--pixel-black)] hidden lg:block z-0"></div>
+        <div class="absolute top-[260px] md:top-[240px] w-3/4 h-2 bg-[var(--pixel-black)] hidden lg:block z-0"></div>
+        <div class="absolute top-[260px] md:top-[240px] left-[12.5%] w-2 h-8 bg-[var(--pixel-black)] hidden lg:block z-0"></div>
+        <div class="absolute top-[260px] md:top-[240px] left-[50%] w-2 h-8 bg-[var(--pixel-black)] hidden lg:block z-0"></div>
+        <div class="absolute top-[260px] md:top-[240px] right-[12.5%] w-2 h-8 bg-[var(--pixel-black)] hidden lg:block z-0"></div>
+
+        <!-- Opportunity Blocks -->
+        <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4 lg:mt-8 relative z-10">
+          
+          <div class="pixel-box p-6 pixel-border-green bg-[var(--pixel-white)] hover:-translate-y-2 transition-transform">
+            <div class="text-3xl mb-4">🎮</div>
+            <h3 class="font-pixel text-sm mb-4 leading-relaxed">AGODA FOR BUSINESS (GST-FIRST)</h3>
+            <p class="font-body text-sm mb-4">Automated GST invoicing, corporate billing, policy enforcement, dedicated support.</p>
+            <div class="border-t-2 border-dashed border-[var(--pixel-grid)] pt-4 mt-auto">
+              <span class="font-body text-xs font-bold bg-[var(--pixel-green)] text-white px-2 py-1">POSITION AS:</span>
+              <p class="font-data text-lg mt-2">"GST-Compliant Platform"</p>
+            </div>
+          </div>
+
+          <div class="pixel-box p-6 pixel-border-pink bg-[var(--pixel-white)] relative hover:-translate-y-2 transition-transform transform lg:-translate-y-4 shadow-[10px_10px_0px_var(--pixel-black)]">
+            <div class="absolute -top-4 -right-4 border-4 border-[var(--pixel-black)] shadow-[6px_6px_0px_var(--pixel-black)] bg-[var(--pixel-pink)] text-white p-2 font-pixel text-[10px] transform rotate-12">
+              EXPLORE
+            </div>
+            <div class="text-3xl mb-4">🕹️</div>
+            <h3 class="font-pixel text-sm mb-4 leading-relaxed">TIER 2 OUTBOUND ENGINE</h3>
+            <p class="font-body text-sm mb-4">Vernacular flows, UPI-first checkout, aspirational bundles, localized marketing.</p>
+            <div class="border-t-2 border-dashed border-[var(--pixel-grid)] pt-4 mt-auto">
+              <span class="font-body text-xs font-bold bg-[var(--pixel-pink)] text-white px-2 py-1">POSITION AS:</span>
+              <p class="font-data text-lg mt-2">"Your Gateway to the World"</p>
+            </div>
+          </div>
+
+          <div class="pixel-box p-6 border-4 border-[var(--pixel-bg)] bg-[var(--pixel-white)] hover:-translate-y-2 transition-transform">
+            <div class="text-3xl mb-4">🎯</div>
+            <h3 class="font-pixel text-sm mb-4 leading-relaxed">AGODA CASH LOYALTY</h3>
+            <p class="font-body text-sm mb-4">Make Agoda Cash liquid, transparent, stackable with standard bank offers.</p>
+            <div class="border-t-2 border-dashed border-[var(--pixel-grid)] pt-4 mt-auto">
+              <span class="font-body text-xs font-bold bg-[var(--pixel-black)] text-white px-2 py-1">POSITION AS:</span>
+              <p class="font-data text-lg mt-2">"Currency That Never Expires"</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="zigzag-divider"></div>
+
+  <!-- SLIDE 6 -->
+  <section class="min-h-screen w-full relative flex items-center justify-center py-20 px-6 border-b-0 bg-[var(--pixel-bg)]">
+    <div class="max-w-7xl mx-auto w-full flex justify-center">
+      <div class="pixel-box w-full max-w-3xl bg-[var(--pixel-white)] relative p-0 overflow-hidden text-center">
+        <div class="w-full h-2 bg-[var(--pixel-pink)]"></div>
+        
+        <div class="p-10 md:p-16">
+          <h2 class="font-pixel text-2xl md:text-3xl leading-relaxed mb-6">
+            THIS IS A SPACE I'D GENUINELY LOVE TO EXPLORE DEEPER.
+          </h2>
+          
+          <p class="font-body text-lg mb-10 text-gray-700">
+            I'm currently looking for an internship for Summer 2026, and would be excited to work on problems like this with your team.
+          </p>
+          
+          <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
+            <a href="https://www.linkedin.com/in/kunjharjai/" target="_blank" rel="noopener noreferrer" class="pixel-button bg-[var(--pixel-green)] text-[var(--pixel-black)] px-6 py-4 w-full md:w-auto no-underline">
+              LINKEDIN &rarr;
+            </a>
+            <a href="https://calendly.com/kunjharjai13/30min" target="_blank" rel="noopener noreferrer" class="pixel-button bg-[var(--pixel-pink)] text-[var(--pixel-white)] px-6 py-4 w-full md:w-auto no-underline">
+              SCHEDULE A CHAT &rarr;
+            </a>
+          </div>
+
+          <div class="bg-[var(--pixel-grid)] p-4 text-left inline-block w-full md:w-auto font-body pixel-border">
+            <p class="font-bold text-lg mb-2">Kunj Harjai</p>
+            <p class="text-sm">Kunj.24141@sscbs.du.ac.in</p>
+            <p class="text-sm">+91 93 109 29 096</p>
+          </div>
+        </div>
+
+        <!-- Footer Ticker -->
+        <div class="w-full bg-[var(--pixel-black)] text-[var(--pixel-white)] font-pixel text-xs p-3 overflow-hidden">
+          <div class="animate-marquee whitespace-nowrap inline-block uppercase">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const container = entry.target;
+
+            // Pie slices
+            container.querySelectorAll('.pie-slice').forEach(el => {
+              el.classList.remove('scale-0');
+              el.classList.add('scale-100');
+            });
+
+            // Bars
+            container.querySelectorAll('.animate-height').forEach(el => {
+              el.style.height = el.dataset.height;
+            });
+
+            // Histogram
+            container.querySelectorAll('.histogram-bar').forEach(el => {
+              el.style.width = el.dataset.width;
+            });
+
+            // Matrix markers
+            container.querySelectorAll('.matrix-marker').forEach(el => {
+              el.classList.remove('opacity-0');
+              el.classList.add('opacity-100');
+            });
+
+            // Matrix SVG
+            const svg = container.querySelector('.matrix-svg');
+            if (svg) {
+              svg.classList.remove('opacity-0');
+              svg.classList.add('opacity-100');
+            }
+
+            observer.unobserve(container);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      const slide2 = document.getElementById('slide-2-charts');
+      if (slide2) observer.observe(slide2);
+    });
+  </script>
+
+</body>
+</html>
